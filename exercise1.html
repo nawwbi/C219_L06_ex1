@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap Hero</title>
+</head>
+
+<style>
+    @media screen and (min-width: 1024px) {
+        .container-fluid {
+            align-items: center;
+            text-align: center;
+        }
+        .img-fluid {
+            height: 260px;
+            width: 200px;
+        }
+
+        .center-content {
+            margin: 0 auto;
+            text-align: left;
+            max-width: 600px;
+        }
+    }
+</style>
+
+<body>
+    <!-- Add a fluid container so that the hero fills the browser width -->
+    <div class="container-fluid bg-dark p-3">
+        <!-- Add a container here for responsiveness -->
+        <div class="container d-flex justify-content-center">
+            <!-- Add a row here that will contain 2 columns -->
+            <div class="row center-content">
+                <!-- Add a column here for text -->
+                <div class="col-sm-6 p-3">
+                    <!-- Add a heading element here https://getbootstrap.com/docs/5.1/content/typography -->
+                    <h1 class="text-light">Bootstrap Hero</h1>
+                    <!-- Add a paragraph of text here https://getbootstrap.com/docs/5.1/content/typography/#lead -->
+                    <div class="text-light lead pb-3">
+                        This is my first time trying out Bootstrap and I am enjoying it! Look what I made here.
+                    </div>
+                    <!-- Add a button here https://getbootstrap.com/docs/5.1/components/buttons -->
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </div>
+                <!-- Add a column here for the image -->
+                <div class="col-sm-6 p-3">
+                    <img class="img-fluid" src="resources/no-bg.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
